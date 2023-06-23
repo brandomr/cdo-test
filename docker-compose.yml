@@ -1,0 +1,7 @@
+version: "3.9"
+services:
+  elwood:
+    container_name: cdo-test-container
+    build: ./
+    volumes:
+      - $PWD:/regridding_code
