@@ -36,7 +36,7 @@ http://xarray.pydata.org/en/stable/user-guide/io.html
 
 I believe that CDO is unable to open the input netcdf produced by this code because it is trying to use xarray to do so and that xarray is failing to find the netCDF4 library, even though running `xarray.open_dataset(<Any netcdf here>)` works.
 
-You can also troubleshoot with a bigger dataset by using the following code:
+You can also troubleshoot with a bigger dataset by using the following code (Note that you will need to source the `MERRA2_...` file from the datasets google drive):
 
 ```
 import regridding_code.regridding_2 as regrid
