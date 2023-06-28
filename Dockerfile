@@ -34,4 +34,7 @@ RUN pip3 install numpy==1.22 && \
       pip3 install -r requirements.txt
 
 COPY . /regridding_code
-ENTRYPOINT [ "tail", "-f", "/dev/null" ]
+
+RUN pip3 install jupyter
+
+ENTRYPOINT ["jupyter", "notebook", "--ip=0.0.0.0", "--no-browser", "--allow-root", "--NotebookApp.allow_origin='http://localhost:8888'"]

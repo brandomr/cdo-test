@@ -5,3 +5,5 @@ services:
     build: ./
     volumes:
       - $PWD:/regridding_code
+    ports:
+      - 8888:8888
